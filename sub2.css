@@ -1,0 +1,112 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+  color: white;
+}
+
+.wrapper {
+  width: 100vw;/*el ancho del elemento al 100%*/
+  height: 100vh;/*altura del elemento al 100%*/
+  background:#d34bc4;/*color del fondo */
+  color: #000000;/*color del elemento*/
+}
+header{
+  background: #0d2c54;
+}
+.navbar {
+  display: flex;/*diseño flexible*/
+  
+  padding: 2em;/*margen interno*/
+}
+
+
+
+.main {
+  margin: 0 auto;/*espacio de arriba y abajo en 0 y horizontal centrado*/
+  width: 80vw;/*ancho del elemento*/
+  height: 80vh;/*altura del elemento*/
+  display: grid;/*distribuye en filas y columnas*/
+  grid-template-columns: repeat(2,1fr);/*establece 2 columnas*/
+  align-items: center;/*alinea en el centro verticalmente*/
+  gap: 9em;/*espacio entre las columnas*/
+}
+
+h1 {
+  font-size: 3em;/*tamaño del texto*/
+}
+
+.info-content span {
+  color: #ffffff;
+}
+
+.info-content {
+    overflow: hidden; /* Oculta el texto que no está siendo animado */
+    animation: escribir 3s steps(40, end) forwards; /* Aplica la animación "escribir" durante 3 segundos */
+}
+
+@keyframes escribir {/*definir la animación*/
+    from {
+        width: 0;/*texto aun no escrito al comienzo*/
+    }
+    to {
+        width: 100%;/*texto ya escrito*/
+    }
+}
+
+.download-cv {
+  padding: 10px 20px;/*rellenode espacio de arriba y abajo,espacio de derecha e izquierda*/
+  background-color: #4ab6e8;
+  border: none;/*Elimina cualquier borde alrededor del botón*/
+  border-radius: 20px;/*borde circular de los botones*/
+  margin-top: 10px;/*margen exterior haciendo un espacio de otro elemento*/
+  cursor: pointer;/*detecta el mouse*/
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);/*sombra del botón*/
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+}
+
+.download-cv:hover {
+  background-color: rgb(128, 24, 114);
+  box-shadow: none;/*borra las sombras*/
+}
+
+.main img {
+  border:  7px solid #000000;/*borde solido*/
+  width: 350px;/*ancho del elemento*/
+  height: 520px;/*altura de la imagen*/
+  margin-left: 300px;/*margen izquierdo*/
+  margin: 10px;/*margen a todas las direcciones*/
+  
+}
+
+
+
+.footer {
+  display: flex;/*elementos flexibles ,facilita ordenar en filas y columnas*/
+  flex-direction: column;/*permite que se ponga uno ensima del otro*/
+  justify-content: center;/*centra verticalmente*/
+  align-items: center;/*centra horizontalmente*/
+  width: 100vw;/*ancho del contenedor*/
+  height: 200px;/*altura del contenedor*/
+  padding: 2em;/*relleno del contenedor,alrededor*/
+  background-color:#4361ee;/*color del fondo*/
+}
+
+
+.sotial-networks {
+  display: flex;/*elementos flexibles ,facilita ordenar en filas y columnas*/
+  justify-content: space-evenly;/*pone eel espacio entre los iconos*/
+  width: 300px;/* cantidad separación de los íconos*/
+  margin-top:60px;/*margin ensima del contenedor*/
+  
+}
+
