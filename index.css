@@ -274,3 +274,11 @@ footer .container{
     justify-content: center;
     align-items: flex-end;
 }
+
+script{
+    display:flex;
+    width: 46px;
+    height: 50px;
+    justify-content:center;
+
+}
